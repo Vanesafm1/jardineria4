@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="188"
-  DTS:VersionGUID="{983534D0-C017-4C93-B5C4-1DB7B471852F}">
+  DTS:VersionBuild="207"
+  DTS:VersionGUID="{C4CDF251-A5EE-4C35-8A64-104D991AA802}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -4403,7 +4403,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{D228CFAA-CF7B-4AA5-868B-7ED425206913}"
-          SQLTask:SqlStatementSource="truncate table Dest_OJar_Cliente&#xA;truncate table Dest_Ojar_Geo2&#xA;truncate table Dest_Ojar_Oficina&#xA;truncate table Dest_OJar_ProductoST&#xA;truncate table Dest_OJar_Tiem&#xA;truncate table Dest_OJard_dtallePdidoST&#xA;truncate table Dest_Ojar_pedidoST2&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table Dest_OJar_Cliente&#xA;truncate table Dest_Ojar_Geo2&#xA;truncate table Dest_Ojar_Oficina&#xA;truncate table Dest_OJar_ProductoST&#xA;truncate table Dest_OJar_Tiem&#xA;truncate table Dest_OJard_dtallePdidoST&#xA;truncate table Dest_Ojar_pedidoST2&#xA;truncate table HechosStaging2&#xA;truncate table Dest_OJard_DetalleP_ST2&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5795,7 +5795,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\TransformacionProducto\Productotranforfinal.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -6442,7 +6442,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\TransformacionProducto\Tranf_productoSt.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -7928,7 +7928,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_ClienteST_ClienteDim\Otrasnf_clienteDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -9534,7 +9534,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_ClienteST_ClienteDim\Transf_final_clietneDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -10229,7 +10229,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_dimST_tiempo\Dest_DimTiempo_Transf.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -11497,7 +11497,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_dimST_tiempo\Origen_DimTiempoTransSort.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -12460,7 +12460,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_GeoSt_GeoDim\OTrans_geoDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -13262,7 +13262,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_GeoSt_GeoDim\Trans_final_GeoDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -14202,7 +14202,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_OficinaSt_OficindaDim\Orig_tranf_OficinaDIM.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -15234,7 +15234,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_OficinaSt_OficindaDim\Tranf_Final_OficinaDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -15950,7 +15950,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_PedidoST_PedidoDim\Otranfs_PedidoDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -17112,7 +17112,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
                 <connection
                   refId="Package\Transf_PedidoST_PedidoDim\Tranf_final_pedidoDim.Connections[IDbConnection]"
                   connectionManagerID="{02479A36-235B-4E0F-915B-90045A5974F1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[VFWIN1.DataMart_Jardineria]"
+                  connectionManagerRefId="Project.ConnectionManagers[DataMart_Jardineria]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -17314,7 +17314,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{8C646A4D-9E6B-4F18-AB44-504FB4755350}"
+      DTS:DTSID="{65B52ED4-7751-4441-AB56-16042073BCD4}"
       DTS:From="Package\Limpiar Tablas"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -17391,75 +17391,65 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         <NodeLayout
           Size="200,42"
           Id="Package\Extraccion_O_Jardineria"
-          TopLeft="70,120" />
+          TopLeft="135,120" />
         <NodeLayout
           Size="185,42"
           Id="Package\HechosDetallePedido"
-          TopLeft="838,467" />
+          TopLeft="428,475" />
         <NodeLayout
           Size="151,42"
           Id="Package\Limpiar Tablas"
-          TopLeft="87,47" />
+          TopLeft="151,29" />
         <NodeLayout
           Size="225,42"
           Id="Package\Transf_ClienteST_ClienteDim"
-          TopLeft="812,279" />
+          TopLeft="106,352" />
         <NodeLayout
           Size="187,42"
           Id="Package\Transf_dimST_tiempo"
-          TopLeft="74,192" />
+          TopLeft="124,192" />
         <NodeLayout
           Size="194,42"
           Id="Package\Transf_GeoSt_GeoDim"
-          TopLeft="830,198" />
+          TopLeft="110,275" />
         <NodeLayout
           Size="227,42"
           Id="Package\Transf_OficinaSt_OficindaDim"
-          TopLeft="556,198" />
+          TopLeft="376,262" />
         <NodeLayout
           Size="225,42"
           Id="Package\Transf_PedidoST_PedidoDim"
-          TopLeft="835,352" />
+          TopLeft="404,342" />
         <NodeLayout
           Size="199,42"
           Id="Package\TransformacionProducto"
-          TopLeft="318,194" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="166.25,89">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,31"
-              Start="0,0"
-              End="0,23.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="404,194" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="168.75,162">
+          TopLeft="235,162">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30"
+              EndConnector="-17.5,30"
               Start="0,0"
-              End="0,22.5">
+              End="-17.5,22.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11"
+                    Point2="0,15"
+                    Point3="-4,15" />
+                  <mssgle:LineSegment
+                    End="-13.5,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-13.5,15"
+                    Point2="-17.5,15"
+                    Point3="-17.5,19" />
+                  <mssgle:LineSegment
+                    End="-17.5,22.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17470,18 +17460,18 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="261,214">
+          TopLeft="311,214">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57,0"
+              EndConnector="93,0"
               Start="0,0"
-              End="49.5,0">
+              End="85.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="49.5,0" />
+                    End="85.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17492,18 +17482,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="517,217">
+          TopLeft="503.5,236">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="39,0"
+              EndConnector="-14,26"
               Start="0,0"
-              End="31.5,0">
+              End="-14,18.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="31.5,0" />
+                    End="0,9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9"
+                    Point2="0,13"
+                    Point3="-4,13" />
+                  <mssgle:LineSegment
+                    End="-10,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10,13"
+                    Point2="-14,13"
+                    Point3="-14,17" />
+                  <mssgle:LineSegment
+                    End="-14,18.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17514,18 +17516,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="783,219">
+          TopLeft="376,283">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="47,0"
+              EndConnector="-72,13"
               Start="0,0"
-              End="39.5,0">
+              End="-64.5,13">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="39.5,0" />
+                    End="-32,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32,0"
+                    Point2="-36,0"
+                    Point3="-36,4" />
+                  <mssgle:LineSegment
+                    End="-36,9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36,9"
+                    Point2="-36,13"
+                    Point3="-40,13" />
+                  <mssgle:LineSegment
+                    End="-64.5,13" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17536,18 +17550,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="925.75,240">
+          TopLeft="207,317">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39"
+              EndConnector="11.5,35"
               Start="0,0"
-              End="0,31.5">
+              End="11.5,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5" />
+                    End="0,13.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5"
+                    Point2="0,17.5"
+                    Point3="4,17.5" />
+                  <mssgle:LineSegment
+                    End="7.5,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.5,17.5"
+                    Point2="11.5,17.5"
+                    Point3="11.5,21.5" />
+                  <mssgle:LineSegment
+                    End="11.5,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17558,30 +17584,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="924.5,321">
+          TopLeft="331,373">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="23,31"
+              EndConnector="73,-10"
               Start="0,0"
-              End="23,23.5">
+              End="65.5,-10">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.5" />
+                    End="32.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.5"
-                    Point2="0,15.5"
-                    Point3="4,15.5" />
+                    Point1="32.5,0"
+                    Point2="36.5,0"
+                    Point3="36.5,-4" />
                   <mssgle:LineSegment
-                    End="19,15.5" />
+                    End="36.5,-6" />
                   <mssgle:CubicBezierSegment
-                    Point1="19,15.5"
-                    Point2="23,15.5"
-                    Point3="23,19.5" />
+                    Point1="36.5,-6"
+                    Point2="36.5,-10"
+                    Point3="40.5,-10" />
                   <mssgle:LineSegment
-                    End="23,23.5" />
+                    End="65.5,-10" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17592,30 +17618,52 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="947.5,394">
+          TopLeft="518.5,384">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-17,73"
+              EndConnector="0,91"
               Start="0,0"
-              End="-17,65.5">
+              End="0,83.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.5"
-                    Point2="0,36.5"
-                    Point3="-4,36.5" />
+                    End="0,83.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="226.5,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,49"
+              Start="0,0"
+              End="8.5,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-13,36.5" />
+                    End="0,20.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-13,36.5"
-                    Point2="-17,36.5"
-                    Point3="-17,40.5" />
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
                   <mssgle:LineSegment
-                    End="-17,65.5" />
+                    End="4.5,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,24.5"
+                    Point2="8.5,24.5"
+                    Point3="8.5,28.5" />
+                  <mssgle:LineSegment
+                    End="8.5,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17975,88 +18023,104 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="108,42"
+          Id="Package\HechosDetallePedido\Sort 1"
+          TopLeft="367,114" />
+        <NodeLayout
           Size="143,42"
           Id="Package\HechosDetallePedido\HechosOrige"
-          TopLeft="192,150" />
+          TopLeft="92,36" />
         <NodeLayout
           Size="145,42"
           Id="Package\HechosDetallePedido\HechosSta_o"
-          TopLeft="656,140" />
+          TopLeft="348,43" />
         <NodeLayout
           Size="99,42"
           Id="Package\HechosDetallePedido\Sort"
-          TopLeft="288,229" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\HechosDetallePedido\Sort 1"
-          TopLeft="667,215" />
-        <EdgeLayout
-          Id="Package\HechosDetallePedido.Paths[ADO NET Source Output]"
-          TopLeft="263.5,192">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="74,37"
-              Start="0,0"
-              End="74,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.5"
-                    Point2="0,18.5"
-                    Point3="4,18.5" />
-                  <mssgle:LineSegment
-                    End="70,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="70,18.5"
-                    Point2="74,18.5"
-                    Point3="74,22.5" />
-                  <mssgle:LineSegment
-                    End="74,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\HechosDetallePedido.Paths[ADO NET Source Output1]"
-          TopLeft="724.75,182">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\HechosDetallePedido\Conditional Split"
-          TopLeft="426,396" />
+          TopLeft="101,116" />
         <NodeLayout
           Size="160,42"
           Id="Package\HechosDetallePedido\HechosStaging2"
-          TopLeft="419,485" />
+          TopLeft="232,372" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\HechosDetallePedido\Conditional Split"
+          TopLeft="239,283" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\HechosDetallePedido\Merge Join"
+          TopLeft="240,199" />
+        <EdgeLayout
+          Id="Package\HechosDetallePedido.Paths[Sort Output1]"
+          TopLeft="421,156">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-93.6666666666667,43"
+              Start="0,0"
+              End="-93.6666666666667,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.4933135215453" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.4933135215453"
+                    Point2="0,25.4933135215453"
+                    Point3="-4,25.4933135215453" />
+                  <mssgle:LineSegment
+                    End="-89.6666666666667,25.4933135215453" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-89.6666666666667,25.4933135215453"
+                    Point2="-93.6666666666667,25.4933135215453"
+                    Point3="-93.6666666666667,29.4933135215453" />
+                  <mssgle:LineSegment
+                    End="-93.6666666666667,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\HechosDetallePedido.Paths[Sort Output]"
+          TopLeft="150.5,158">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="135.166666666667,41"
+              Start="0,0"
+              End="135.166666666667,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3075780089153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3075780089153"
+                    Point2="0,24.3075780089153"
+                    Point3="4,24.3075780089153" />
+                  <mssgle:LineSegment
+                    End="131.166666666667,24.3075780089153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="131.166666666667,24.3075780089153"
+                    Point2="135.166666666667,24.3075780089153"
+                    Point3="135.166666666667,28.3075780089153" />
+                  <mssgle:LineSegment
+                    End="135.166666666667,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\HechosDetallePedido.Paths[Registros Nuevos]"
-          TopLeft="502.25,438">
+          TopLeft="315.25,325">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -18078,104 +18142,88 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\HechosDetallePedido\Merge Join"
-          TopLeft="533,317" />
-        <EdgeLayout
-          Id="Package\HechosDetallePedido.Paths[Sort Output]"
-          TopLeft="337.5,271">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="262,46"
-              Start="0,0"
-              End="262,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="4,23" />
-                  <mssgle:LineSegment
-                    End="258,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="258,23"
-                    Point2="262,23"
-                    Point3="262,27" />
-                  <mssgle:LineSegment
-                    End="262,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\HechosDetallePedido.Paths[Sort Output1]"
-          TopLeft="721,257">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-100.666666666667,60"
-              Start="0,0"
-              End="-100.666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5720653789005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5720653789005"
-                    Point2="0,35.5720653789005"
-                    Point3="-4,35.5720653789005" />
-                  <mssgle:LineSegment
-                    End="-96.6666666666666,35.5720653789005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-96.6666666666666,35.5720653789005"
-                    Point2="-100.666666666667,35.5720653789005"
-                    Point3="-100.666666666667,39.5720653789005" />
-                  <mssgle:LineSegment
-                    End="-100.666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\HechosDetallePedido.Paths[Merge Join Output]"
-          TopLeft="599.5,359">
+          TopLeft="306.5,241">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-94,37"
+              EndConnector="12,42"
               Start="0,0"
-              End="-94,29.5">
+              End="12,34.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.5" />
+                    End="0,17" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.5"
-                    Point2="0,18.5"
-                    Point3="-4,18.5" />
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
                   <mssgle:LineSegment
-                    End="-90,18.5" />
+                    End="8,21" />
                   <mssgle:CubicBezierSegment
-                    Point1="-90,18.5"
-                    Point2="-94,18.5"
-                    Point3="-94,22.5" />
+                    Point1="8,21"
+                    Point2="12,21"
+                    Point3="12,25" />
                   <mssgle:LineSegment
-                    End="-94,29.5" />
+                    End="12,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\HechosDetallePedido.Paths[ADO NET Source Output1]"
+          TopLeft="420.75,85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\HechosDetallePedido.Paths[ADO NET Source Output]"
+          TopLeft="163.5,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13,38"
+              Start="0,0"
+              End="-13,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15"
+                    Point2="0,19"
+                    Point3="-4,19" />
+                  <mssgle:LineSegment
+                    End="-9,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9,19"
+                    Point2="-13,19"
+                    Point3="-13,23" />
+                  <mssgle:LineSegment
+                    End="-13,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18187,6 +18235,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\HechosDetallePedido\HechosOrige">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\HechosDetallePedido\HechosSta_o">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\HechosDetallePedido\HechosStaging2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Transf_ClienteST_ClienteDim">
     <LayoutInfo>
@@ -18255,7 +18327,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="12.1298828125,18.5,36.240234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18289,7 +18363,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="29.6298828125,30,36.240234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18311,7 +18387,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-18.1201171875,16.46337890625,36.240234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18345,7 +18423,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-72.4534505208335,62.5081723625557,36.240234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18379,7 +18459,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="76.1298828125,29,36.240234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18425,7 +18507,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-18.1201171875,9.96337890625,36.240234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18523,7 +18607,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-101.397805989584,79.1084695393759,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18557,7 +18643,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="42.68552734375,23.5,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18615,7 +18703,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-20.56447265625,12.52685546875,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18649,7 +18739,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="10.43552734375,27,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18683,7 +18775,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="4.68552734375,39,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18705,7 +18799,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-20.56447265625,20.02685546875,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19107,9 +19203,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19143,9 +19237,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19191,9 +19283,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19215,9 +19305,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19251,9 +19339,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19275,9 +19361,7 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19375,7 +19459,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-97.06447265625,36,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19409,7 +19495,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-7.06447265625,-15.4462890625,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19479,7 +19567,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="9.93552734375,28.5,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19513,7 +19603,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-5.81447265625,21.5,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19535,7 +19627,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-20.56447265625,13.52685546875,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19569,7 +19663,9 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-15.81447265625,34,41.1289453125,9.4462890625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19611,87 +19707,81 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         <NodeLayout
           Size="158,42"
           Id="Package\TransformacionProducto\Derived Column"
-          TopLeft="94,164" />
+          TopLeft="88,131" />
         <NodeLayout
           Size="164,42"
           Id="Package\TransformacionProducto\Tranf_productoSt"
-          TopLeft="492,63" />
+          TopLeft="345,66" />
         <NodeLayout
           Size="133,42"
           Id="Package\TransformacionProducto\Merge Join"
-          TopLeft="407,324" />
+          TopLeft="211,304" />
         <NodeLayout
           Size="143,42"
           Id="Package\TransformacionProducto\SortProducto"
-          TopLeft="579,161" />
+          TopLeft="338,228" />
         <NodeLayout
           Size="137,42"
           Id="Package\TransformacionProducto\ProdcutoST"
-          TopLeft="161,232" />
+          TopLeft="83,221" />
         <NodeLayout
           Size="159,42"
           Id="Package\TransformacionProducto\Conditional Split"
-          TopLeft="536,388" />
+          TopLeft="198,394" />
         <NodeLayout
           Size="175,42"
           Id="Package\TransformacionProducto\Productotranforfinal"
-          TopLeft="323,497" />
+          TopLeft="204,488" />
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[NuevosRegistros]"
-          TopLeft="615.5,430">
+          TopLeft="277.5,436">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-205,67"
+              EndConnector="14,52"
               Start="0,0"
-              End="-205,59.5">
+              End="14,44.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,22" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="-4,33.5" />
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="4,26" />
                   <mssgle:LineSegment
-                    End="-201,33.5" />
+                    End="10,26" />
                   <mssgle:CubicBezierSegment
-                    Point1="-201,33.5"
-                    Point2="-205,33.5"
-                    Point3="-205,37.5" />
+                    Point1="10,26"
+                    Point2="14,26"
+                    Point3="14,30" />
                   <mssgle:LineSegment
-                    End="-205,59.5" />
+                    End="14,44.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-139.517578125,38.5,74.03515625,11.384765625"
+              BoundingBox="-30.017578125,31,74.03515625,11.384765625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[Merge Join Output]"
-          TopLeft="540,345">
+          TopLeft="277.5,346">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="75.5,43"
+              EndConnector="0,48"
               Start="0,0"
-              End="75.5,35.5">
+              End="0,40.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="71.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.5,0"
-                    Point2="75.5,0"
-                    Point3="75.5,4" />
-                  <mssgle:LineSegment
-                    End="75.5,35.5" />
+                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19702,30 +19792,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[Derived Column Output]"
-          TopLeft="173,206">
+          TopLeft="167,173">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56.5,26"
+              EndConnector="-15.5,48"
               Start="0,0"
-              End="56.5,18.5">
+              End="-15.5,40.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9" />
+                    End="0,20" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9"
-                    Point2="0,13"
-                    Point3="4,13" />
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="-4,24" />
                   <mssgle:LineSegment
-                    End="52.5,13" />
+                    End="-11.5,24" />
                   <mssgle:CubicBezierSegment
-                    Point1="52.5,13"
-                    Point2="56.5,13"
-                    Point3="56.5,17" />
+                    Point1="-11.5,24"
+                    Point2="-15.5,24"
+                    Point3="-15.5,28" />
                   <mssgle:LineSegment
-                    End="56.5,18.5" />
+                    End="-15.5,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19736,30 +19826,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[ADO NET Source Output1]"
-          TopLeft="574,105">
+          TopLeft="427,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="76.5,56"
+              EndConnector="-17.5,120"
               Start="0,0"
-              End="76.5,48.5">
+              End="-17.5,112.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24" />
+                    End="0,56" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24"
-                    Point2="0,28"
-                    Point3="4,28" />
+                    Point1="0,56"
+                    Point2="0,60"
+                    Point3="-4,60" />
                   <mssgle:LineSegment
-                    End="72.5,28" />
+                    End="-13.5,60" />
                   <mssgle:CubicBezierSegment
-                    Point1="72.5,28"
-                    Point2="76.5,28"
-                    Point3="76.5,32" />
+                    Point1="-13.5,60"
+                    Point2="-17.5,60"
+                    Point3="-17.5,64" />
                   <mssgle:LineSegment
-                    End="76.5,48.5" />
+                    End="-17.5,112.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19770,18 +19860,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[ADO NET Source Output]"
-          TopLeft="174.5,102">
+          TopLeft="176,102">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,62"
+              EndConnector="-9,29"
               Start="0,0"
-              End="0,54.5">
+              End="-9,21.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.5" />
+                    End="0,10.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.5"
+                    Point2="0,14.5"
+                    Point3="-4,14.5" />
+                  <mssgle:LineSegment
+                    End="-5,14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5,14.5"
+                    Point2="-9,14.5"
+                    Point3="-9,18.5" />
+                  <mssgle:LineSegment
+                    End="-9,21.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19792,30 +19894,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[Sort Output1]"
-          TopLeft="650.5,203">
+          TopLeft="409.5,270">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-156.166666666667,121"
+              EndConnector="-111.166666666667,34"
               Start="0,0"
-              End="-156.166666666667,113.5">
+              End="-111.166666666667,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,67.7369985141159" />
+                    End="0,16.1575037147102" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,67.7369985141159"
-                    Point2="0,71.7369985141159"
-                    Point3="-4,71.7369985141159" />
+                    Point1="0,16.1575037147102"
+                    Point2="0,20.1575037147102"
+                    Point3="-4,20.1575037147102" />
                   <mssgle:LineSegment
-                    End="-152.166666666667,71.7369985141159" />
+                    End="-107.166666666667,20.1575037147102" />
                   <mssgle:CubicBezierSegment
-                    Point1="-152.166666666667,71.7369985141159"
-                    Point2="-156.166666666667,71.7369985141159"
-                    Point3="-156.166666666667,75.7369985141159" />
+                    Point1="-107.166666666667,20.1575037147102"
+                    Point2="-111.166666666667,20.1575037147102"
+                    Point3="-111.166666666667,24.1575037147102" />
                   <mssgle:LineSegment
-                    End="-156.166666666667,113.5" />
+                    End="-111.166666666667,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19826,30 +19928,30 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\TransformacionProducto.Paths[Sort Output]"
-          TopLeft="229.5,274">
+          TopLeft="151.5,263">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="244,50"
+              EndConnector="105.166666666667,41"
               Start="0,0"
-              End="244,42.5">
+              End="105.166666666667,33.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21" />
+                    End="0,20.3075780089153" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21"
-                    Point2="0,25"
-                    Point3="4,25" />
+                    Point1="0,20.3075780089153"
+                    Point2="0,24.3075780089153"
+                    Point3="4,24.3075780089153" />
                   <mssgle:LineSegment
-                    End="240,25" />
+                    End="101.166666666667,24.3075780089153" />
                   <mssgle:CubicBezierSegment
-                    Point1="240,25"
-                    Point2="244,25"
-                    Point3="244,29" />
+                    Point1="101.166666666667,24.3075780089153"
+                    Point2="105.166666666667,24.3075780089153"
+                    Point3="105.166666666667,28.3075780089153" />
                   <mssgle:LineSegment
-                    End="244,42.5" />
+                    End="105.166666666667,33.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19879,30 +19981,6 @@ JOIN Categoria_producto cp ON p.Categoria = cp.Id_Categoria;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\TransformacionProducto\Productotranforfinal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\HechosDetallePedido\HechosOrige">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\HechosDetallePedido\HechosSta_o">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\HechosDetallePedido\HechosStaging2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

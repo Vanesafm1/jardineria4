@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VFWIN1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJbfGmbhfiU2noUIMDgn94gAAAAACAAAAAAAQZgAAAAEAACAAAAD+aK8JSUA53GAuLgaCBYuhsvcIU+u9+PKHM5b4kkMPMgAAAAAOgAAAAAIAACAAAAD951PCevYTtc8Aq4CWCadBsNixl8vWADvQYosadlTDL5AAAADzZz/uMMmdLTn3dLg3MxmOae9BXO7acOa9xr5DQTjZox4BLkqLuQSw8WN8/GA34474c22Stnh2cGdQ+8scnbYJ8hkgk48zoQ9P3AFMXkdfX61b0eHJ7ewzC6q51yJBP3f9XEetwM9IgmXjspObBSw9P31eTocxBCNl3FHp1QI6OQ6TdEI1PBjhRKHqG+T6CcBAAAAAx+Uo1Al540lqrYpKwRVsSUVEk18AehnYqyFhz5LdPOAioEef9JQ+4Fzk7/CUeLv2r4wSRziWbk1Qr90KrhgyCg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJbfGmbhfiU2noUIMDgn94gAAAAACAAAAAAAQZgAAAAEAACAAAAAD1JZ0/ld+634sIAmgoirZ/ImV76VqOVFVBLe+ePbxPQAAAAAOgAAAAAIAACAAAADWc4YYwuZzp3Y5k9pQgE8AV+w/RdIbJX+iG0Gg7aTMK5AAAADUX9Vc1j5fipF+v4WHjqqkfhEvyEaPA45Vdf9txcjqsy1M7fwWXs4YVpnlvgJN6QqC7uRRQG9zzjnXaOEMVTBS5sckMN+FqsyHrKjpPqaNSSZehFyva8cMK54dTHxZUSepcAt/YngLcMkfkXv6ZNvKcUR2mqQxpDOPicWhMrMiZYxAyCyymjlAT0xU1sKcaixAAAAAvKCcwMaD3CdkUAwYQNqwN0cngPMmHk+a1BNTMoOA4xrXg1dY7AnsDpoaFR988ro9XT4sOpRsDd7s3tAZk49nXg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,7 +35,7 @@
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="Origen.jardineria.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="StagingJarineria.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="VFWIN1.DataMart_Jardineria.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="DataMart_Jardineria.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -275,7 +275,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -290,7 +290,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -305,7 +305,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.ConnectUsingManagedIdentity">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.ConnectUsingManagedIdentity">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -320,7 +320,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -335,7 +335,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.Password">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -349,7 +349,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -364,7 +364,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -379,7 +379,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.VFWIN1.DataMart_Jardineria.UserName">
+            <SSIS:Parameter SSIS:Name="CM.DataMart_Jardineria.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -401,10 +401,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">104</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">206</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{2BF1C4A5-324A-4126-BDB4-5336EEE373BA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4621C417-CBC7-42B4-B585-63963771FE05}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
